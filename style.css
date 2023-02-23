@@ -1,0 +1,106 @@
+:root {
+    /* Primary-colors */
+
+--Moderate-violet: hsl(263, 55%, 52%);
+--Very-dark-grayish-blue: hsl(217, 19%, 35%);
+--Very-dark-blackish-blue: hsl(219, 29%, 14%);
+--White: hsl(0, 0%, 100%);
+
+    /* Neutral colors */
+
+--Light-gray: hsl(0, 0%, 81%);
+--Light-grayish-blue: hsl(210, 46%, 95%);
+
+    /* Font */
+
+--Barlow-font: 'Barlow Semi Condensed', sans-serif;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--Light-grayish-blue);
+    font-family: var(--Barlow-font);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+#testimonials {
+    font-size: 13px;
+    display: grid;
+    gap: 1.5em;
+    grid-template-areas: "Dan" "Jon" "Jean" "Pat" "Kira";
+    margin: 5em 1em;
+    padding: 1em;
+}
+#Dan {
+    background: var(--Moderate-violet) url(images/bg-pattern-quotation.svg) no-repeat right top;
+    grid-area: Dan;
+}
+#Jon {
+    background-color: var(--Very-dark-grayish-blue);
+    grid-area: Jon;
+}
+#Jean {
+    background-color: var(--White);
+    grid-area: Jean;
+}
+#Pat {
+    background-color: var(--Very-dark-blackish-blue);
+    grid-area: Pat;
+}
+#Kira {
+    background-color: var(--White);
+    grid-area: Kira;
+}
+#Pat, #Dan, #Jon {
+    color: var(--White);
+}
+#Pat, #Dan, #Jon, #Jean, #Kira {
+    padding: 2em;
+    border-radius: 10px;
+}
+.flex {
+    display: flex;
+}
+.flex img {
+    border-radius: 50%;
+    height: 2.2em;
+    border: 1px solid var(--White);
+    margin-right: 1em;
+}
+article h2 {
+    padding: 1em 0;
+}
+.title p {
+    color: rgba(255, 255, 255, 0.5);
+}
+article p {
+    color: hsl(0, 0%, 100%, 70%);
+}
+#Jean p, #Kira p {
+    color: hsl(217, 19%, 35%, 70%);
+    ;
+}
+#Jean .title p, #Kira .title p {
+    color: hsl(217, 19%, 35%, 50%);
+}
+#Jean, #Kira {
+    color: var(--Very-dark-blackish-blue);
+}
+@media (min-width: 768px){
+    #testimonials {
+        grid-template-areas: "Dan Dan Jon Kira" "Jean Pat Pat Kira";
+        margin: 0 2em;
+    }
+}
