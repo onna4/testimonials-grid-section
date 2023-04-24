@@ -101,6 +101,17 @@ article p {
 @media (min-width: 768px){
     #testimonials {
         grid-template-areas: "Dan Dan Jon Kira" "Jean Pat Pat Kira";
-        margin: 0 2em;
+        margin: 5em 2em;
+        width: 750px;
+    }
+}
+@media (min-width: 992px){
+    #testimonials {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px){
+    #testimonials {
+        width: 1170px;
     }
 }
