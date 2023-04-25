@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Screenshot
 
-![project screenshot](./design/mydesktop-view.png)
+![project screenshot](./design/desktop-view.png)
 
 
 ### Links
