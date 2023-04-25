@@ -110,20 +110,46 @@ article p {
         line-height: 1.3;
         font-size: 1rem;
     }
-    #Jean p, #Pat p, #Jon p{
-        line-height: 1.5;
-    }
     .subheading {
         font-size: 1.5rem;
+    }
+    #Jon .subheading {
+        font-size: 1.3rem;
+    }
+    #Jon p {
+        font-size: 0.97rem;
     }
 }
 @media (min-width: 992px){
     #testimonials {
         width: 970px;
     }
+    #Jean p, #Pat p, #Jon p{
+        line-height: 1.5;
+    }
 }
 @media (min-width: 1200px){
     #testimonials {
         width: 1170px;
+    }
+    .subheading {
+        font-size: 1.2rem;
+    }
+    #Jean .subheading{
+        font-size: 1.3rem;
+    }
+    article p {
+        font-size: .8rem;
+        line-height: 1.3;
+    }
+    #Jean p {
+        line-height: 1.6;
+        font-size: 0.84rem;
+    }
+    #Kira p {
+        font-size: .88rem;
+    }
+    #Jon p {
+        font-size: 0.7rem;
     }
 }
