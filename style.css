@@ -101,8 +101,20 @@ article p {
 @media (min-width: 768px){
     #testimonials {
         grid-template-areas: "Dan Dan Jon Kira" "Jean Pat Pat Kira";
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         margin: 5em 2em;
         width: 750px;
+    }
+    article p {
+        line-height: 1.3;
+        font-size: 1rem;
+    }
+    #Jean p, #Pat p, #Jon p{
+        line-height: 1.5;
+    }
+    .subheading {
+        font-size: 1.5rem;
     }
 }
 @media (min-width: 992px){
